@@ -6,14 +6,9 @@
 n = int(input("Введіть кількість чисел Фібоначчі (n): "))
 
 # Ініціалізація змінних
-prev = 0
-current = 1
+a = 1
+b = 1
 
-# Виведення перших двох чисел Фібоначчі
-print(0)
-print(1)
-
-for _ in range(2, n):
-    next = prev + current
-    print(next)
-    prev, current = current, next
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
